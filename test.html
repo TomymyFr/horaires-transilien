@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Horaire de la ligne L en semaine">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="icon" href="favicon-l.ico">
+    <title>Ligne L Horaire semaine</title>
+    <style>
+        * {
+            font-family: monospace;
+        }
+
+        table {
+            border-collapse: collapse;
+            height: 100vh
+        }
+
+        table td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        // This function also returns Promise
+        function my_async_fn(url) {
+            return fetch(url)
+
+        };
+        var data = my_async_fn('https://jsonplaceholder.typicode.com/todos/1'); // Returns Promise
+
+        data.then(response => response.json())
+            .then(json => {
+                for (let index = 0; index < json.length; index++) {
+                    console.log(json[index]);
+                    
+                }
+            });
+    </script>
+</body>
+
+</html>
